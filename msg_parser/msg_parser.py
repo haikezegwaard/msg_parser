@@ -11,9 +11,9 @@ from struct import unpack
 
 from olefile import OleFileIO, isOleFile
 
-from data_models import DataModel
-from email_builder import EmailFormatter
-from properties.ms_props_id_map import PROPS_ID_MAP
+from .data_models import DataModel
+from .email_builder import EmailFormatter
+from .properties.ms_props_id_map import PROPS_ID_MAP
 
 TOP_LEVEL_HEADER_SIZE = 32
 RECIPIENT_HEADER_SIZE = 8
