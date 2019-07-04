@@ -80,7 +80,7 @@ class Message(object):
             "recipients": {},
             "attachments": {}
         }
-        for name, stream in directory_entries.iteritems():
+        for name, stream in directory_entries.items():
             # collect properties
             if "__substg1.0_" in name:
                 streams["properties"][name] = stream
@@ -104,7 +104,7 @@ class Message(object):
         directory_entries = self._streams.get("properties")
         directory_name_filter = "__substg1.0_"
         property_entries = {}
-        for directory_name, directory_entry in directory_entries.iteritems():
+        for directory_name, directory_entry in directory_entries.items():
 
             if directory_name_filter not in directory_name:
                 continue
@@ -131,7 +131,7 @@ class Message(object):
         directory_entries = self._streams.get("recipients")
         directory_name_filter = "__recip_version1.0_"
         recipient_entries = {}
-        for directory_name, directory_entry in directory_entries.iteritems():
+        for directory_name, directory_entry in directory_entries.items():
 
             if directory_name_filter not in directory_name:
                 continue
@@ -160,7 +160,7 @@ class Message(object):
         directory_entries = self._streams.get("attachments")
         directory_name_filter = "__attach_version1.0_"
         attachment_entries = {}
-        for directory_name, directory_entry in directory_entries.iteritems():
+        for directory_name, directory_entry in directory_entries.items():
 
             if directory_name_filter not in directory_name:
                 continue
