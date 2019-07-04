@@ -72,7 +72,7 @@ Usage
 
    .. code-block:: python
 
-        from msg_parser import MsOxMessage
+        from msg_parser.msg_parser import MsOxMessage
 
         msg_obj = MsOxMessage(msg_file_path)
 
