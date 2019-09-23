@@ -81,8 +81,8 @@ class DataModel(object):
 
     @staticmethod
     def PtypString8(data_value):
-        if data_value and '\x00' in data_value:
-            data_value = data_value.replace('\x00', '')
+        if data_value and b'\x00' in data_value:
+            data_value = data_value.replace(b'\x00', b'')
         return data_value
 
     @staticmethod
